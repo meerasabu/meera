@@ -1,0 +1,492 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<title>Art@touch Online Art Shop</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static 'assets_user/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'assets_user/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome icons -->
+<link href="{% static 'assets_user/css/font-awesome.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="{% static 'assets_user/js/jquery-1.11.1.min.js' %}"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{% static 'assets_user/js/move-top.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets_user/js/easing.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+
+<body>
+<!-- header -->
+<!--	<div class="agileits_header">-->
+<!--		<div class="w3l_search">-->
+<!--			<form action="#" method="post">-->
+<!--				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">-->
+<!--				<input type="submit" value=" ">-->
+<!--			</form>-->
+<!--		</div>-->
+<!--		<div class="product_list_header">-->
+<!--			<form action="#" method="post" class="last">-->
+<!--                <fieldset>-->
+<!--                    <input type="hidden" name="cmd" value="_cart" />-->
+<!--                    <input type="hidden" name="display" value="1" />-->
+<!--                    <input type="submit" name="submit" value="View your cart" class="button" />-->
+<!--                </fieldset>-->
+<!--            </form>-->
+<!--		</div>-->
+<!--		<div class="w3l_header_right">-->
+<!--			<ul>-->
+<!--				<li class="dropdown profile_details_drop">-->
+<!--					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>-->
+<!--					<div class="mega-dropdown-menu">-->
+<!--						<div class="w3ls_vegetables">-->
+<!--							<ul class="dropdown-menu drp-mnu">-->
+<!--								<li><a href="login.html">Login</a></li>-->
+<!--								<li><a href="login.html">Sign Up</a></li>-->
+<!--							</ul>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</li>-->
+<!--			</ul>-->
+<!--		</div>-->
+<!--		<div class="w3l_header_right1">-->
+<!--			<h2><a href="mail.html">Contact Us</a></h2>-->
+<!--		</div>-->
+<!--		<div class="clearfix"> </div>-->
+<!--	</div>-->
+<!-- script-for sticky-nav -->
+	<script>
+	$(document).ready(function() {
+		 var navoffeset=$(".agileits_header").offset().top;
+		 $(window).scroll(function(){
+			var scrollpos=$(window).scrollTop();
+			if(scrollpos >=navoffeset){
+				$(".agileits_header").addClass("fixed");
+			}else{
+				$(".agileits_header").removeClass("fixed");
+			}
+		 });
+
+	});
+	</script>
+<!-- //script-for sticky-nav -->
+<!-- header -->
+	<div class="agileits_header">
+<!--		<div class="w3l_offers">-->
+<!--			<a href="products.html">Today's special Offers !</a>-->
+<!--		</div>-->
+		<div class="w3l_search">
+			<h4>Enjoy Shopping</h4>
+<!--			<form action="#" method="post">-->
+<!--				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">-->
+<!--				<input type="submit" value=" ">-->
+<!--			</form>-->
+		</div>
+		<div class="product_list_header">
+			<a href="checkout"><button type="button" class="btn btn-info">View Your Cart</button></a>
+		</div>
+		<div class="w3l_header_right">
+			<ul>
+				<li class="dropdown profile_details_drop">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
+					<div class="mega-dropdown-menu">
+						<div class="w3ls_vegetables">
+							<ul class="dropdown-menu drp-mnu">
+								<li><a href="user_pro">Profile</a></li>
+								<li><a href="u_odr">My Order</a></li>
+								<li><a href="user_out">Logout</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+<!--		<div class="w3l_header_right1">-->
+<!--			<h2>Contact Us</h2>-->
+<!--		</div>-->
+		<div class="clearfix"> </div>
+	</div>
+
+	<div class="logo_products">
+		<div class="container">
+			<div class="w3ls_logo_products_left">
+				<h1><a href="index.html"><span>Art@</span> Touch</a></h1>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="special_items">
+					<li><a href="u_art">Artists</a><i>/</i></li>
+					<li><a href="abt">About Us</a><i>/</i></li>
+					<li><a href="user1">Art Works</a><i>/</i></li>
+<!--					<li class="dropdown mega-dropdown active">-->
+<!--						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Art Works<span class="caret"></span></a><i>/</i>-->
+<!--						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">-->
+<!--							<div class="w3ls_vegetables">-->
+<!--								<ul>-->
+<!--									<li><a href="vegetables.html">Modern Art</a></li><br>-->
+<!--									<li><a href="vegetables.html">Pop Art</a></li>-->
+<!--								</ul>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</li>-->
+					<li><a href="revw">Review</a></li>
+				</ul>
+			</div>
+			<div class="w3ls_logo_products_left1">
+				<ul class="phone_email">
+					<li><i class="fa fa-phone" aria-hidden="true"></i>0481 2242049</li>
+					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:art@touch.com">art@touch.com</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<div class="banner-silder">
+		<div id="JiSlider" class="jislider">
+			<ul>
+				<li>
+					<div class="w3layouts-banner-top">
+
+<!--							<div class="container">-->
+<!--								<div class="agileits-banner-info">-->
+
+<!--									<h3> Creativity takes courage </h3>-->
+<!--								</div>-->
+<!--							</div>-->
+						</div>
+				</li>
+<!--				<li>-->
+<!--						<div class="w3layouts-banner-top w3layouts-banner-top1">-->
+<!--						<div class="container">-->
+<!--								<div class="agileits-banner-info">-->
+
+<!--									<h3> Art is never finished. Only abandoned</h3>-->
+
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--				</li>-->
+<!--				<li>-->
+<!--						<div class="w3layouts-banner-top w3layouts-banner-top2">-->
+<!--							<div class="container">-->
+<!--								<div class="agileits-banner-info">-->
+
+<!--									<h3> creativity is magic. Don't examine it too closely</h3>-->
+
+<!--								</div>-->
+
+<!--							</div>-->
+<!--						</div>-->
+<!--					</li>-->
+<!--					<li>-->
+<!--						<div class="w3layouts-banner-top w3layouts-banner-top3">-->
+<!--							<div class="container">-->
+<!--								<div class="agileits-banner-info">-->
+
+<!--									<h3> Inspiration exists, but it has to find you working</h3>-->
+
+<!--								</div>-->
+
+<!--							</div>-->
+<!--						</div>-->
+<!--					</li>-->
+			</ul>
+		</div>
+      </div>
+</div>
+<!-- top-brands -->
+	<div class="top-brands">
+		<div class="container">
+			<h3>Art Works</h3>
+			{% for i in r %}
+			<div class="agile_top_brands_grids">
+				<div class="col-md-3 top_brand_left">
+					<div class="hover14 column">
+						<div class="agile_top_brand_left_grid">
+<!--							<div class="tag"><img src="{% static 'assets_user/images/tag.png' %}" alt=" " class="img-responsive" /></div>-->
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block" >
+										<div class="snipcart-thumb">
+											<a href="single/{{i.id}}"><img title=" " alt=" " src="{{i.image.url}}" height="50" width="40"/></a>
+											<form method="post" action="cart">
+												{% csrf_token %}
+												<p><b>{{i.artist_name}}</b></p>
+												<p>{{i.work}}</p>
+												<p>{{i.description}}</p>
+												<h4>{{i.price}} </h4>
+
+												<input type="hidden" name="a_name" value="{{i.artist_name}}" />
+												<input type="hidden" name="item_id" value="{{i.id}}" />
+												<input type="hidden" name="work" value="{{i.work}}" />
+<!--												<input type="hidden" name="img" value="{{i.image.url}}" />-->
+												<input type="hidden" name="description" value="{{i.description}}" />
+												<input type="hidden" name="price" value="{{i.price}}" />
+												<input type="submit"  value="Add to cart" class="button" />
+											</form>
+										</div>
+									</div>
+							</div>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- //about -->
+		</div>
+		<div class="clearfix"></div>
+	</div>
+<!-- //banner -->
+<!-- team -->
+	<div class="team">
+		<div class="container">
+			<h3>Meet Our Amazing Team</h3>
+			<div class="agileits_team_grids">
+				<div class="col-md-3 agileits_team_grid">
+					<img src="{% static 'assets_user/images/32.jpg' %}" alt=" " class="img-responsive" />
+					<h4>Martin Paul</h4>
+					<p>Manager</p>
+					<ul class="agileits_social_icons agileits_social_icons_team">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 agileits_team_grid">
+					<img src="{% static 'assets_user/images/33.jpg' %}" alt=" " class="img-responsive" />
+					<h4>Michael Rick</h4>
+					<p>Supervisor</p>
+					<ul class="agileits_social_icons agileits_social_icons_team">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 agileits_team_grid">
+					<img src="{% static 'assets_user/images/34.jpg' %}" alt=" " class="img-responsive" />
+					<h4>Thomas Carl</h4>
+					<p>Supervisor</p>
+					<ul class="agileits_social_icons agileits_social_icons_team">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 agileits_team_grid">
+					<img src="{% static 'assets_user/images/35.jpg' %}" alt=" " class="img-responsive" />
+					<h4>Laura Lee</h4>
+					<p>CEO</p>
+					<ul class="agileits_social_icons agileits_social_icons_team">
+						<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+<!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+			<h3>Testimonials</h3>
+				<div class="w3_testimonials_grids">
+					<div class="wmuSlider example1 animated wow slideInUp" data-wow-delay=".5s">
+						<div class="wmuSliderWrapper">
+							<article style="position: absolute; width: 100%; opacity: 0;">
+								<div class="banner-wrap">
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+											repellat.</p>
+										<h4>Andrew Smith <span>Customer</span></h4>
+									</div>
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+											repellat.</p>
+										<h4>Thomson Richard <span>Customer</span></h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</article>
+							<article style="position: absolute; width: 100%; opacity: 0;">
+								<div class="banner-wrap">
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+											repellat.</p>
+										<h4>Crisp Kale <span>Customer</span></h4>
+									</div>
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+											repellat.</p>
+										<h4>John Paul <span>Customer</span></h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</article>
+							<article style="position: absolute; width: 100%; opacity: 0;">
+								<div class="banner-wrap">
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+											repellat.</p>
+										<h4>Rosy Carl <span>Customer</span></h4>
+									</div>
+									<div class="col-md-6 w3_testimonials_grid">
+										<p><i class="fa fa-quote-right" aria-hidden="true"></i>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+											voluptatibus maiores alias consequatur aut perferendis doloribus asperiores
+											repellat.</p>
+										<h4>Rockson Doe <span>Customer</span></h4>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<script src="{% static 'assets_user/js/jquery.wmuSlider.js' %}"></script>
+					<script>
+						$('.example1').wmuSlider();
+					</script>
+				</div>
+		</div>
+	</div>
+<!-- //testimonials -->
+<div class="footer">
+		<div class="container">
+			<div class="col-md-3 w3_footer_grid">
+				<h3>information</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="u_art">Artist</a></li>
+					<li><a href="abt">About Us</a></li>
+					<li><a href="user1">Art Works</a></li>
+					<li><a href="revw">Reviews</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 w3_footer_grid">
+				<h3>policy info</h3>
+				<ul class="w3_footer_grid_list">
+					<li><a href="faqs.html">FAQ</a></li>
+					<li><a href="privacy.html">privacy policy</a></li>
+					<li><a href="privacy.html">terms of use</a></li>
+				</ul>
+			</div>
+<!--			<div class="col-md-3 w3_footer_grid">-->
+<!--				<h3>what in stores</h3>-->
+<!--				<ul class="w3_footer_grid_list">-->
+<!--					<li><a href="pet.html">Pet Food</a></li>-->
+<!--					<li><a href="frozen.html">Frozen Snacks</a></li>-->
+<!--					<li><a href="kitchen.html">Kitchen</a></li>-->
+<!--					<li><a href="products.html">Branded Foods</a></li>-->
+<!--					<li><a href="household.html">Households</a></li>-->
+<!--				</ul>-->
+<!--			</div>-->
+			<div class="col-md-3 w3_footer_grid">
+				<h3>twitter posts</h3>
+				<ul class="w3_footer_grid_list1">
+					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>01 day ago</i><span>Non numquam <a href="#">http://sd.ds/13jklf#</a>
+						eius modi tempora incidunt ut labore et
+						<a href="#">http://sd.ds/1389kjklf#</a>quo nulla.</span></li>
+					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>02 day ago</i><span>Con numquam <a href="#">http://fd.uf/56hfg#</a>
+						eius modi tempora incidunt ut labore et
+						<a href="#">http://fd.uf/56hfg#</a>quo nulla.</span></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+			<div class="agile_footer_grids">
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h4>100% secure payments</h4>
+						<img src="{% static 'assets_user/images/card.png' %}" alt=" " class="img-responsive" />
+					</div>
+				</div>
+				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
+					<div class="w3_footer_grid_bottom">
+						<h5>connect with us</h5>
+						<ul class="agileits_social_icons">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="wthree_footer_copy">
+				<p>© 2016 Grocery Store. All rights reserved | Design by Meera V S</p>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+
+<script src="{% static 'assets_user/js/bootstrap.min.js' %}"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');
+        }
+    );
+});
+</script>
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+	</script>
+
+</body>
+</html>

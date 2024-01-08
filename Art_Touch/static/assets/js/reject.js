@@ -1,0 +1,1 @@
+alert("you are rejected by admin...please try next time....")

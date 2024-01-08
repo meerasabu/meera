@@ -1,0 +1,27 @@
+{%extends 'layout.html'%}
+{%block content%}
+
+<div class="container">
+<div class="main">
+		<div class="main-w3l">
+			<div class="w3layouts-main">
+				<h2><span>User Register </span></h2>
+					<form action="" method="post" enctype="multipart/form-data">
+						{% csrf_token %}
+						User_ id:<input placeholder="User_Id" name="u1" type="text" required="">
+						Name:<input placeholder="Full Name" name="u2" type="text" required="">
+						Email<input placeholder="Email" name="u3" type="email" required="">
+						Mobile Number:<input placeholder="Phone Number" name="u4" type="text" required="">
+						Address<input placeholder="Address" name="u5" type="text" required="">
+						State:<input placeholder="State" name="u6" type="text" required="">
+						City:<input placeholder="City" name="u7" type="text"  required="">
+						Zip Code:<input placeholder="Enter Pincode" name="u8" type="text" required="">
+						Profile Picture:<input placeholder="Profile Picture" name="u9" type="file"  required="">
+						Username<input placeholder="Username" name="u10" type="email" required="">
+						Password<input placeholder="Password" name="u11" type="password" required="">
+						<input type="submit" value="Get Started" name="Register">
+					</form>
+			</div>
+        </div>
+</div>
+    {% endblock %}

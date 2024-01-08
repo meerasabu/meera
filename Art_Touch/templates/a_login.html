@@ -1,0 +1,52 @@
+{%extends 'layout.html'%}
+{%block content%}
+
+
+<br><br>
+
+	<div class="container">
+		<!-- login form -->
+		<section class="w3l-login">
+			<div class="overlay">
+				<div class="wrapper">
+					<div class="logo">
+						<a class="brand-logo" href="index.html">Art@Touch login form</a>
+					</div>
+					<div class="form-section">
+						<h3>Artist Login</h3>
+						<h6>Make Your Dreams Come True</h6>
+						<form action="" method="post" class="signin-form">
+							{% csrf_token %}
+							<div class="form-input">
+								<label>User Name:</label>
+								<input type="email" name="l1" placeholder="email" required="" autofocus>
+							</div>
+							<div class="form-input">
+								<label>Password:</label>
+								<input type="password" name="l2" placeholder="Password" required="">
+								{% for i in messages %}
+								<h4>{{i}}</h4>
+								{% endfor %}
+							</div>
+							<label class="check-remaind">
+								<input type="checkbox">
+								<span class="checkmark"></span>
+								<p class="remember">Remember me</p>
+							</label>
+							<button type="submit" class="btn btn-primary theme-button mt-4">Log in</button>
+							<div class="new-signup">
+								<a href="#reload" class="signuplink">Forgot username or password?</a>
+							</div>
+						</form>
+						<p class="signup">Don’t have account yet? <a href="areg" class="signuplink">Sign Up</a></p>
+					</div>
+				</div>
+			</div>
+			<div id='stars'></div>
+			<div id='stars2'></div>
+			<div id='stars3'></div>
+
+		</section>
+	</div>
+
+{% endblock %}

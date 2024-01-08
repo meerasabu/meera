@@ -1,0 +1,204 @@
+{% load static %}
+
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+<title>Art@Touch Online Shop</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Boat house Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smart phone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="{% static 'assets/css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'assets/css/JiSlider.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- font-awesome-icons -->
+<link href="../static/assets/css/font-awesome.css" rel="stylesheet">
+<!-- //font-awesome-icons -->
+<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="{% static 'css2/style.css' %}" type="text/css" media="all" />
+<link href="{% static 'css3/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+                  <style>
+                      .card {
+                        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                        transition: 0.3s;
+                        width: 30%;
+
+
+                      }
+
+                      .card:hover {
+                        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                      }
+
+                      .container {
+                        padding: 2px 16px;
+                      }
+                      html, body {
+                        font-family: Verdana,sans-serif;
+                        font-size: 15px;
+                        line-height: .1;
+}
+                      </style>
+    <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    td {
+        color: black;
+    }
+</style>
+
+
+</head>
+<body style="background-colo:grey ;" >
+<!-- header -->
+<div class="banner-top">
+	<div class="header">
+	<div class="container">
+			<div class="header-left">
+                <h1><a class="navbar-brand" href="/"> ArT@ToUcH</a></h1>
+
+				<!-- <div class="agileinfo-phone">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p><i class="fa fa-volume-control-phone" aria-hidden="true">123456789</i></p>
+				</div>
+				<div class="agileinfo-phone agileinfo-map">
+					<p><i class="fa fa-map-marker" aria-hidden="true">Thrissur</i></p>
+				</div> -->
+				<!-- <div class="search-grid">
+					<form action="#" method="post">
+						<input type="text" name="subscribe" placeholder="Subscribe" class="big-dog" name="Subscribe" required="">
+						<button class="btn1"><i class="fa fa-search" aria-hidden="true"></i></button>
+					</form>
+				</div> -->
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		</div>
+
+
+
+
+
+        <div class="w3_navigation">
+            <div class="container">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header navbar-left">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+
+							<span class="icon-bar"></span>
+                        </button>
+                        <!-- <h1><a class="navbar-brand" href="/"> OYASIS </a></h1> -->
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                        <nav class="menu menu--iris">
+                            <ul class="nav navbar-nav menu__list">
+								<li class="menu__item menu__item--current"><a href="/" class="menu__link">Home</a></li>
+								<li class="menu__item menu__item"><a href="../art_pro" class="menu__link">Profile</a></li>
+								<li class="dropdown menu__item"><a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">Work Uploads<b class="caret"></b></a>
+									<ul class="dropdown-menu agile_short_dropdown">
+										<li><a href="art_work" class="dropdown-item">Add Work</a></li>
+										<li><a href="work_vw" class="dropdown-item">View All Works </a> </li>
+									</ul>
+								</li>
+								<li class="menu__item menu__item"><a href="review_vw" class="menu__link">Reviews</a></li>
+
+
+								<li class="menu__item menu__item"><a href="../artist_out" class="menu__link">Log Out</a></li>
+							</ul>
+                        </nav>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    {% if k == 'pending' %}
+	<script src="{% static 'assets/js/demo.js' %}"></script>
+	{% else %}
+        <br><br><br><br>
+    <h3><center>REVIEWS</center></h3>
+    <br><br><br><br>
+    <br><br><br><br>
+    <div>
+      <table class="table" ui-jq="footable" ui-options='{
+        "paging": {
+          "enabled": true
+        },
+        "filtering": {
+          "enabled": true
+        },
+        "sorting": {
+          "enabled": true
+        }}'>
+        <thead>
+          <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Category</th>
+              <th scope="col">Quality of Work</th>
+              <th scope="col">Comments</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in a %}
+                <tr>
+                    <td>{{i.username}}</td>
+                    <td>{{i.category}}</td>
+                    <td>{{i.quality}}</td>
+					<td>{{i.comments}}</td>
+                </tr>
+                {%endfor%}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+
+
+
+
+</div>
+</body>
+
+<br><br><br><br><br>
+</html>
